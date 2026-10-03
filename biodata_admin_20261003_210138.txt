@@ -1,0 +1,11 @@
+Data disimpan oleh: admin
+Waktu penyimpanan: 2026-10-03 21:01:38
+--------------------------------------------------
+BIODATA TERSIMPAN:
+Diinput oleh: admin
+
+Nama: hesti febriyani
+NIM: 24106050010
+Jurusan: informatika
+Alamat: yogyakarta
+Jenis Kelamin: Wanita

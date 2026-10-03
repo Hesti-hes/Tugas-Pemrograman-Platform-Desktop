@@ -1,0 +1,35 @@
+2026-10-03 21:40:42 - INFO - Aplikasi dimulai
+2026-10-03 21:40:48 - INFO - Percobaan login dengan username: 'admin'
+2026-10-03 21:40:48 - INFO - Login berhasil: User 'admin'
+2026-10-03 21:41:24 - INFO - Data biodata berhasil disubmit oleh 'admin' untuk mahasiswa 'asyifa'
+2026-10-03 21:49:50 - INFO - Aplikasi dimulai
+2026-10-03 21:49:56 - INFO - Percobaan login dengan username: 'admin'
+2026-10-03 21:49:56 - INFO - Login berhasil: User 'admin'
+2026-10-03 21:50:14 - INFO - User 'admin' berhasil logout
+2026-10-03 21:50:21 - INFO - Percobaan login dengan username: 'admin'
+2026-10-03 21:50:21 - WARNING - Login gagal: Username atau password salah untuk user 'admin'
+2026-10-03 21:50:42 - INFO - Percobaan login dengan username: ''
+2026-10-03 21:50:42 - WARNING - Login gagal: Username kosong
+2026-10-03 21:51:01 - INFO - Percobaan login dengan username: 'admin'
+2026-10-03 21:51:01 - WARNING - Login gagal: Password kosong
+2026-10-03 21:51:14 - INFO - Percobaan login dengan username: 'admin'
+2026-10-03 21:51:14 - INFO - Login berhasil: User 'admin'
+2026-10-03 22:09:59 - INFO - Data biodata berhasil disubmit oleh 'admin' untuk mahasiswa 'hesti febriyani'
+2026-10-03 22:10:22 - INFO - Data biodata berhasil disubmit oleh 'admin' untuk mahasiswa 'hesti febriyani'
+2026-10-03 22:26:26 - INFO - Aplikasi dimulai
+2026-10-03 22:43:14 - INFO - Aplikasi dimulai
+2026-10-03 22:44:38 - INFO - Percobaan login dengan username: 'admin'
+2026-10-03 22:44:38 - INFO - Login berhasil: User 'admin'
+2026-10-03 22:45:00 - INFO - Aplikasi ditutup oleh pengguna
+2026-10-03 22:45:05 - INFO - Aplikasi dimulai
+2026-10-03 22:45:44 - INFO - Percobaan login dengan username: 'admin'
+2026-10-03 22:45:44 - INFO - Login berhasil: User 'admin'
+2026-10-03 22:45:49 - INFO - Aplikasi ditutup oleh pengguna
+2026-10-03 22:45:51 - INFO - Aplikasi dimulai
+2026-10-03 22:46:19 - INFO - Percobaan login dengan username: 'admin'
+2026-10-03 22:46:19 - INFO - Login berhasil: User 'admin'
+2026-10-03 22:54:02 - INFO - Data biodata berhasil disubmit oleh 'admin' untuk mahasiswa 'd,ndnkjndjncnd'
+2026-10-03 23:02:59 - INFO - Aplikasi dimulai
+2026-10-03 23:03:07 - INFO - Percobaan login dengan username: 'admin'
+2026-10-03 23:03:07 - INFO - Login berhasil: User 'admin'
+2026-10-03 23:04:55 - INFO - Data biodata berhasil disubmit oleh 'admin' untuk mahasiswa 'syifa hesti'
