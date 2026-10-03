@@ -1,6 +1,6 @@
 # Tugas Pemrograman Platform Desktop
 
-**Nama:** Hesti Febriyani
+**Nama:** Hesti Febriyani<br>
 **Mata Kuliah:** Tugas Pemrograman Platform Desktop
 
 ## Deskripsi
