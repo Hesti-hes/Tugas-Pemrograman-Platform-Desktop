@@ -1,10 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-
-# =========================
 # Fungsi Submit
-# =========================
 def submit_data():
     if var_setuju.get() == 0:
         messagebox.showwarning(
@@ -44,10 +41,7 @@ def submit_data():
         hasil
     )
 
-
-# =========================
 # Fungsi Validasi Real-time
-# =========================
 def validate_form(*args):
     nama_valid = var_nama.get().strip() != ""
     nim_valid = var_nim.get().strip() != ""
@@ -59,10 +53,7 @@ def validate_form(*args):
     else:
         btn_submit.config(state=tk.DISABLED)
 
-
-# =========================
 # Fungsi Hover Button
-# =========================
 def on_enter(event):
     if btn_submit["state"] == tk.NORMAL:
         btn_submit.config(bg="lightblue")
@@ -71,18 +62,13 @@ def on_enter(event):
 def on_leave(event):
     btn_submit.config(bg="SystemButtonFace")
 
-
-# =========================
 # Fungsi Shortcut Enter
-# =========================
 def submit_shortcut(event=None):
     if btn_submit["state"] == tk.NORMAL:
         submit_data()
 
 
-# =========================
 # Fungsi Menu Simpan Hasil
-# =========================
 def simpan_hasil():
     hasil_tersimpan = label_hasil.cget("text")
 
@@ -102,9 +88,7 @@ def simpan_hasil():
     )
 
 
-# =========================
 # Fungsi Keluar Aplikasi
-# =========================
 def keluar_aplikasi():
     if messagebox.askokcancel(
         "Keluar",
@@ -112,10 +96,7 @@ def keluar_aplikasi():
     ):
         window.destroy()
 
-
-# =========================
 # Membuat Jendela Utama
-# =========================
 window = tk.Tk()
 window.title("Form Biodata Mahasiswa")
 window.geometry("500x600")
@@ -123,10 +104,7 @@ window.resizable(True, True)
 window.minsize(500, 600)
 window.configure(bg="lavender")
 
-
-# =========================
 # Membuat Frame Utama
-# =========================
 main_frame = tk.Frame(
     master=window,
     padx=20,
@@ -145,11 +123,6 @@ main_frame.grid_columnconfigure(
     weight=1
 )
 
-
-# =========================
-# Variabel
-# =========================
-
 # Variabel Radiobutton
 var_jk = tk.StringVar(value="Pria")
 
@@ -161,10 +134,7 @@ var_nama = tk.StringVar()
 var_nim = tk.StringVar()
 var_jurusan = tk.StringVar()
 
-
-# =========================
 # Judul
-# =========================
 label_judul = tk.Label(
     master=main_frame,
     text="FORM BIODATA MAHASISWA",
@@ -177,10 +147,7 @@ label_judul.grid(
     pady=20
 )
 
-
-# =========================
 # Frame Input
-# =========================
 frame_input = tk.Frame(
     master=main_frame,
     relief=tk.GROOVE,
@@ -190,9 +157,9 @@ frame_input = tk.Frame(
 )
 
 
-# =========================
+   
 # Input Nama
-# =========================
+   
 label_nama = tk.Label(
     master=frame_input,
     text="Nama Lengkap:",
@@ -218,9 +185,9 @@ entry_nama.grid(
 )
 
 
-# =========================
+   
 # Input NIM
-# =========================
+   
 label_nim = tk.Label(
     master=frame_input,
     text="NIM:",
@@ -246,9 +213,9 @@ entry_nim.grid(
 )
 
 
-# =========================
+   
 # Input Jurusan
-# =========================
+   
 label_jurusan = tk.Label(
     master=frame_input,
     text="Jurusan:",
@@ -274,9 +241,9 @@ entry_jurusan.grid(
 )
 
 
-# =========================
+   
 # Input Alamat
-# =========================
+   
 label_alamat = tk.Label(
     master=frame_input,
     text="Alamat:",
@@ -337,9 +304,9 @@ text_alamat.config(
 )
 
 
-# =========================
+   
 # Jenis Kelamin
-# =========================
+   
 label_jk = tk.Label(
     master=frame_input,
     text="Jenis Kelamin:",
@@ -385,9 +352,9 @@ radio_wanita.pack(
 )
 
 
-# =========================
+   
 # Checkbox Persetujuan
-# =========================
+   
 check_setuju = tk.Checkbutton(
     master=frame_input,
     text="Saya menyetujui pengumpulan data ini.",
@@ -404,9 +371,9 @@ check_setuju.grid(
 )
 
 
-# =========================
+   
 # Menempatkan Frame Input
-# =========================
+   
 frame_input.grid(
     row=1,
     column=0,
@@ -415,9 +382,9 @@ frame_input.grid(
 )
 
 
-# =========================
+   
 # Button Submit
-# =========================
+   
 btn_submit = tk.Button(
     master=main_frame,
     text="Submit Biodata",
@@ -434,9 +401,9 @@ btn_submit.grid(
 )
 
 
-# =========================
+   
 # Trace Real-time Validation
-# =========================
+   
 var_nama.trace_add(
     "write",
     validate_form
@@ -453,9 +420,9 @@ var_jurusan.trace_add(
 )
 
 
-# =========================
+   
 # Event Binding Hover
-# =========================
+   
 btn_submit.bind(
     "<Enter>",
     on_enter
@@ -467,9 +434,8 @@ btn_submit.bind(
 )
 
 
-# =========================
+   
 # Label Hasil
-# =========================
 label_hasil = tk.Label(
     master=main_frame,
     text="",
@@ -485,9 +451,8 @@ label_hasil.grid(
 )
 
 
-# =========================
+   
 # Shortcut Keyboard Enter
-# =========================
 entry_nama.bind(
     "<Return>",
     submit_shortcut
@@ -509,9 +474,8 @@ text_alamat.bind(
 )
 
 
-# =========================
+   
 # Menu Bar
-# =========================
 menu_bar = tk.Menu(
     master=window
 )
@@ -521,9 +485,8 @@ window.config(
 )
 
 
-# =========================
+   
 # Menu File
-# =========================
 file_menu = tk.Menu(
     master=menu_bar,
     tearoff=0
@@ -535,9 +498,8 @@ menu_bar.add_cascade(
 )
 
 
-# =========================
+   
 # Item Menu File
-# =========================
 file_menu.add_command(
     label="Simpan Hasil",
     command=simpan_hasil
@@ -551,7 +513,6 @@ file_menu.add_command(
 )
 
 
-# =========================
+   
 # Menjalankan Aplikasi
-# =========================
 window.mainloop()

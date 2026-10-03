@@ -21,7 +21,7 @@ class AplikasiBiodata(tk.Tk):
             "admin": "123",
             "user1": "password1",
             "mahasiswa": "123456",
-            "hesti febriyani": "123456"
+            "hesti febriyani(24106050010)": "123456"
         }
 
         # Status login
@@ -476,26 +476,6 @@ class AplikasiBiodata(tk.Tk):
             lambda e: self._coba_login()
         )
 
-        # Info untuk user
-        info_label = tk.Label(
-            self.frame_login,
-            text="Info: Username yang tersedia:\n"
-                 "admin (password: 123)\n"
-                 "user1 (password: password1)\n"
-                 "mahasiswa (password: 123456)\n"
-                 "hesti febriyani (password: 123456)",
-            font=("Arial", 9),
-            fg="gray",
-            justify=tk.LEFT
-        )
-
-        info_label.grid(
-            row=4,
-            column=0,
-            columnspan=2,
-            pady=10
-        )
-
     # System Navigation
     def _pindah_ke(self, frame_tujuan):
         """Method untuk berpindah antar tampilan"""
@@ -724,7 +704,7 @@ class AplikasiBiodata(tk.Tk):
             "admin": "lightblue",
             "user1": "lightgreen",
             "mahasiswa": "lightyellow",
-            "hesti febriyani": "lightpink"
+            "hesti febriyani(24106050010)": "lightpink"
         }
 
         warna_background = warna_user.get(

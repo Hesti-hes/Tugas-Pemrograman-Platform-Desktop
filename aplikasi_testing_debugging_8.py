@@ -11,8 +11,6 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
-
-
 class CalendarDialog(tk.Toplevel):
     def __init__(self, parent, target_var):
         super().__init__(parent)
@@ -101,7 +99,7 @@ class AplikasiBiodata(tk.Tk):
             "admin": "123",
             "user1": "password1",
             "mahasiswa": "123456",
-            "hesti febriyani": "123456"
+            "hesti febriyani(24106050010)": "123456"
         }
 
         self.current_user = None
@@ -130,9 +128,7 @@ class AplikasiBiodata(tk.Tk):
         
         logging.info("Aplikasi dimulai")
 
-    # ===============================
     # LOGIN VIEW
-    # ===============================
     def _buat_tampilan_login(self):
         self.frame_login = tk.Frame(self, bg="#f0f2f5")
         
@@ -194,15 +190,8 @@ class AplikasiBiodata(tk.Tk):
         
         self.entry_username.bind("<Return>", lambda e: self.entry_password.focus_set())
         self.entry_password.bind("<Return>", lambda e: self._coba_login())
-        
-        # Accounts info
-        info_text = "Hint:\nadmin:123 | user1:password1\nmahasiswa:123456\nhesti febriyani:123456"
-        info_label = tk.Label(self.login_wrapper, text=info_text, font=("Segoe UI", 10), bg="#f0f2f5", fg="#6c757d", justify=tk.CENTER)
-        info_label.pack(pady=20)
 
-    # ===============================
     # BIODATA VIEW
-    # ===============================
     def _buat_tampilan_biodata(self):
         self.frame_biodata = tk.Frame(self, bg="#f0f2f5")
         
@@ -360,9 +349,7 @@ class AplikasiBiodata(tk.Tk):
         self.entries[field_name] = entry
         self.errors[field_name] = err_lbl
 
-    # ===============================
     # NAVIGATION & MENU
-    # ===============================
     def _pindah_ke(self, frame_tujuan):
         if self.frame_aktif is not None:
             self.frame_aktif.pack_forget()
@@ -397,9 +384,7 @@ class AplikasiBiodata(tk.Tk):
             logging.info("Aplikasi ditutup oleh pengguna")
             self.destroy()
 
-    # ===============================
     # VALIDATION & LOGIC
-    # ===============================
     def _coba_login(self):
         username = self.entry_username.get().strip()
         password = self.entry_password.get()
@@ -650,7 +635,7 @@ class AplikasiBiodata(tk.Tk):
             "admin": {"primary": "#0d6efd", "active": "#0b5ed7"},
             "user1": {"primary": "#198754", "active": "#157347"},
             "mahasiswa": {"primary": "#fd7e14", "active": "#e37012"},
-            "hesti febriyani": {"primary": "#d63384", "active": "#b82971"}
+            "hesti febriyani(24106050010)": {"primary": "#d63384", "active": "#b82971"}
         }
         
         theme = themes.get(self.current_user, {"primary": "#0d6efd", "active": "#0b5ed7"})

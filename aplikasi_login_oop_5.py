@@ -26,11 +26,10 @@ class AplikasiBiodata(tk.Tk):
         # Tampilkan frame login di awal
         self._pindah_ke(self.frame_login)
 
-    # PRAKTIKUM 2.1
     # Membuat Tampilan Biodata
     def _buat_tampilan_biodata(self):
 
-        # --- Variabel Kontrol Tkinter ---
+        # Variabel Kontrol Tkinter
         self.var_nama = tk.StringVar()
         self.var_nim = tk.StringVar()
         self.var_jurusan = tk.StringVar()
@@ -42,7 +41,7 @@ class AplikasiBiodata(tk.Tk):
         self.var_nim.trace_add("write", self.validate_form)
         self.var_jurusan.trace_add("write", self.validate_form)
 
-        # --- Frame Biodata ---
+        # Frame Biodata
         self.frame_biodata = tk.Frame(
             master=self,
             padx=20,

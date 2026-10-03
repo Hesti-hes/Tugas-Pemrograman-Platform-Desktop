@@ -26,7 +26,7 @@ class AplikasiBiodata(tk.Tk):
         self.var_jk = tk.StringVar(value="Pria")
         self.var_setuju = tk.IntVar()
 
-        # --- Frame Utama ---
+        # Frame Utama
         # Frame utama juga menjadi atribut
         self.main_frame = tk.Frame(
             master=self,
